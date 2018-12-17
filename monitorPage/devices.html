@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Device Monitor</title>
+    <script src="jquery-1.12.3.min.js"></script>
+    <style>
+        #devicesDiv{
+            padding:10px;
+            width: 80%;
+        }
+        #devicesDiv span {
+            cursor:pointer ;
+            margin: 5px ;
+            padding: 10px 10px 10px 27px;
+            border: 1px gray solid;
+            width: 250px;
+        }
+        #outputDiv{
+            margin:10px;
+            overflow:scroll;
+            width:100%;
+            height:400px;
+            border:1px lightsteelblue solid;
+        }
+        .touched {
+            background-color: greenyellow;
+            border:2px green solid;
+        }
+        .deviceClosed{
+            background:url(images/error.png) no-repeat 6px 9px;
+        }
+        .deviceConnected{
+            background:url(images/check.png) no-repeat 6px 9px ;
+        }
+    </style>
+</head>
+<body>
+<div id="topDiv"></div>
+<div id="devicesDiv"></div>
+<div id="outputDiv" ></div>
+
+</body>
+
+<script  src="common.js" language="javascript"  ></script>
+
+</html>
